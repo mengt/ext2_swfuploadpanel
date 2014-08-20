@@ -1,0 +1,97 @@
+/*
+ * Ext JS Library 2.0
+ * Copyright(c) 2006-2007, Ext JS, LLC.
+ * licensing@extjs.com
+ * 
+ * http://extjs.com/license
+ */
+
+#container {
+    width:600px;
+    height:300px;
+    border:3px solid #c3daf9;
+}
+
+.calendar {
+    background-image:url(../../resources/images/default/shared/calendar.gif) !important;
+}
+
+.blist {
+    background-image: url(list-items.gif) !important;
+}
+
+.saveButton {
+    background-image: url(menuimg/save.gif) !important;
+}
+
+
+.signButton {
+    background-image: url(menuimg/sign.gif) !important;
+}
+
+.endButton {
+    background-image: url(menuimg/end.gif) !important;
+}
+
+.routeBackButton {
+    background-image: url(menuimg/back.gif) !important;
+}
+
+.printButton {
+    background-image: url(menuimg/print.gif) !important;
+}
+
+
+.send {
+    background-image: url(menuimg/send.gif) !important;
+}
+.readend {
+    background-image: url(menuimg/readend.gif) !important;
+}
+
+
+
+.sendMenu0 {
+    background-image: url(menuimg/send0.gif) !important;
+}
+.sendMenu1 {
+    background-image: url(menuimg/send1.gif) !important;
+}
+.sendMenu2 {
+    background-image: url(menuimg/send2.gif) !important;
+}
+.sendMenu3 {
+    background-image: url(menuimg/send3.gif) !important;
+}
+
+.sendMenu4 {
+    background-image: url(menuimg/send0.gif) !important;
+}
+.sendMenu5 {
+    background-image: url(menuimg/send1.gif) !important;
+}
+.sendMenu6 {
+    background-image: url(menuimg/send2.gif) !important;
+}
+.sendMenu7 {
+    background-image: url(menuimg/send3.gif) !important;
+}
+
+
+.viewRouteButton {
+    background-image: url(menuimg/viewprocess.gif) !important;
+}
+
+
+.bmenu {
+    background-image: url(menu-show.gif) !important;
+}
+
+.menu-title{
+    background: #ebeadb url(../../resources/images/default/grid/grid3-hrow.gif) repeat-x;
+    border-bottom:1px solid #99bbe8;
+    color:#15428b;
+    font:bold 10px tahoma,arial,verdana,sans-serif;
+    display:block;
+    padding:3px;
+}

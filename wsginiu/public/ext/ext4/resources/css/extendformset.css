@@ -1,0 +1,157 @@
+
+.x-window-footer {  
+    position: relative;  
+    top: 0;  
+    right: 0;  
+}  
+  
+.x-tab-strip span.x-tab-strip-text {  
+    font-size: 12px;  
+}  
+  
+.x-panel-header {  
+    font-size: 12px;  
+}  
+  
+.x-tree-node {  
+    font-size: 12px;  
+}  
+  
+.x-grid3-hd-row td {  
+    font-size: 12px;  
+}  
+  
+.x-grid3-row td {  
+    font-size: 12px;  
+    line-height: 16px;  
+}  
+  
+.x-tip .x-tip-bd {  
+    font-size: 12px;  
+}  
+  
+.x-tip h3 {  
+    font-size: 12px;  
+}  
+  
+.x-tip .x-tip-bd-inner {  
+    font-size: 12px;  
+}  
+  
+.x-panel-tl .x-panel-header {  
+    font: normal 12px tahoma, arial, verdana, sans-serif;  
+}  
+  
+.x-form-field {  
+    font: 12px tahoma, arial, helvetica, sans-serif;  
+}  
+  
+.x-small-editor .x-form-field {  
+    font: 12px tahoma, arial, helvetica, sans-serif;  
+}  
+  
+.x-combo-list-item {  
+    font: 12px tahoma, arial, helvetica, sans-serif;  
+}  
+  
+.x-menu-list-item {  
+    font: 12px tahoma, arial, sans-serif;  
+}  
+  
+.x-window-tl .x-window-header {  
+    font: bold 12px tahoma, arial, verdana, sans-serif;  
+}  
+  
+.ext-ie .x-form-text {  
+    margin-top: 1px;  
+}  
+  
+.x-form-item {  
+    font: 12px tahoma, arial, helvetica, sans-serif;  
+}  
+  
+.x-grid-group-hd div {  
+    font: bold 12px tahoma, arial, helvetica, sans-serif;  
+}  
+  
+.x-btn-text-icon .x-btn-center .x-btn-text {  
+    background-position: 0pt 2px;  
+    background-repeat: no-repeat;  
+    padding: 3px 0pt 2px 18px;  
+}  
+  
+.ext-gecko .x-btn button {  
+    padding-left:0pt;  
+    padding-right: 0pt;  
+}  
+  
+.x-btn button {  
+    font-size: 12px;  
+}  
+  
+.x-toolbar td,.x-toolbar span,.x-toolbar input,.x-toolbar div,.x-toolbar select,.x-toolbar label {  
+    font-size: 12px;  
+}  
+  
+.x-tip .x-tip-body {  
+    font-size: 12px;  
+}
+.collapse-group .collapse-group-header-text {
+	font-size: 12px;
+} 
+.x-fieldset legend{
+	font: bold 12px tahoma,arial,helvetica,sans-serif;
+}
+
+.x-panel-tl .x-panel-header{
+	font: bold 12px tahoma,arial,verdana,sans-serif;
+}
+#all-demos h2 div {
+    font: bold 12px tahoma,arial,helvetica,sans-serif;
+}
+.x-btn-text {
+	font: 12px tahoma,verdana,helvetica;
+}
+
+.x-window-mc {
+    font: 12px tahoma,arial,helvetica,sans-serif;
+}
+
+.add {
+    background-image: url("/js/ext/images/add.gif") !important;
+}
+.delete{
+	background-image: url("/js/ext/images/delete.gif") !important;
+}
+
+.remove{
+	background-image: url("/js/ext/images/delete.gif") !important;
+}
+.edit{
+	background-image: url("/js/ext/images/edit.gif") !important;
+}
+.zoom{
+	background-image: url("/js/ext/images/zoom.png") !important;
+}
+.update2{
+	background-image: url("/js/ext/images/update2.gif") !important;
+}
+.import{
+	background-image: url("/js/ext/images/import.png") !important;
+}
+.export{
+	background-image: url("/js/ext/images/export.png") !important;
+}
+.close{
+ background-image: url("/js/ext/images/lock.gif") !important;
+}
+.open{
+ background-image: url("/js/ext/images/unlock.gif") !important;
+}
+.backup{
+ background-image: url("/js/ext/images/backup.gif") !important;
+}
+.restore{
+ background-image: url("/js/ext/images/restore.png") !important;
+}
+

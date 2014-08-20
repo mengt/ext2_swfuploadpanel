@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="master.html" />
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+  <title>Welcome to TurboGears 2.0, standing on the 
+  shoulders of giants, since 2007</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="${tg.url('/ext/ext/resources/css/ext-all.css')}" />
+  <!--<script type='text/javascript' src="${tg.url('/ext/ext/ext-base.js')}"></script>-->
+  <script type='text/javascript' src="${tg.url('/ext/ext/ext-all.js')}"></script>
+
+<link rel="stylesheet" type="text/css" href="${tg.url('/ext/ext/resources/css/xtheme-gray.css')}" />
+<script type="text/javascript" src="${tg.url('/ext/ext/adapter/ext/ext-base.js')}"></script>
+<script type="text/javascript" src="${tg.url('/ext/ext/ext-all-debug.js')}"></script>
+
+<!-- Files needed for SwfUploaderPanel -->
+<link rel="stylesheet" type="text/css" href="${tg.url('SwfUploadPanel2.2/SwfUploadPanel.css')}" />
+<script type="text/javascript" src="${tg.url('SwfUploadPanel2.2/SwfUpload.js')}"></script>
+<script type="text/javascript" src="${tg.url('SwfUploadPanel2.2/SwfUploadPanel.js')}"></script>
+    <script type="text/javascript">
+    Ext.onReady(function() {
+          var btn = new Ext.Button({
+            text: 'Launch Sample Uploader',
+            renderTo: 'btn',
+            handler: function() {
+              var dlg = new Ext.ux.SwfUploadPanel({
+                title: 'Dialog Sample',
+                width: 500,
+                height: 300,
+                border: false,
+                // Uploader Params        
+                upload_url: '/upload_iso',
+                //, upload_url: 'http://localhost/www.silverbiology.com/ext/plugins/SwfUploadPanel/upload_example.php'
+                post_params: {
+                  id: 123
+                },
+                file_types: '*.*',
+                //file_types_description: 'Image Files',
+                //flash_url : "/ext/swfupload/swfupload.swf",//必须指定正确的路径
+               // flash9_url : "/ext/swfupload/swfupload_fp9.swf",
+                flash_url: "/SwfUploadPanel2.2/swfupload.swf",
+                //        , single_select: true // Select only one file from the FileDialog
+                // Custom Params
+                single_select: true,
+                single_file_select: false, // Set to true if you only want to select one file from the FileDialog.
+                confirm_delete: false, // This will prompt for removing files from queue.
+                remove_completed: true // Remove file from grid after uploaded.
+              }); // End Dialog
+              var win = new Ext.Window({
+                title: 'Window',
+                layout: 'fit',
+                width: 514,
+                height: 330,
+                resizable: false,
+                modal: true,
+                items: [dlg]
+              }); // End Window
+              win.show();
+            }
+          });
+        });
+</script>
+</head>
+<body>
+<span class="style1">ExtJS Extension</span> (多文件上传)
+<div id="btn">c</div>
+<form action="http://192.168.0.123:8080/upload_iso" method="post" enctype ="multipart/form-data" runat="server"> 
+   <input id="File1" runat="server" name="files" type="file" /> 
+   <input type="submit"  value="Button" />
+</form>
+</body>
+</html>

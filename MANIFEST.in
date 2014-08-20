@@ -1,0 +1,4 @@
+recursive-include wsginiu/public *
+include wsginiu/public/favicon.ico
+recursive-include wsginiu/i18n *
+recursive-include wsginiu/templates *

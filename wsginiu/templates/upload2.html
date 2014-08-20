@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="master.html" />
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+  <title>Welcome to TurboGears 2.0, standing on the 
+  shoulders of giants, since 2007</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="${tg.url('/ext/ext/resources/css/ext-all.css')}" />
+  <!--<script type='text/javascript' src="${tg.url('/ext/ext/ext-base.js')}"></script>-->
+  <script type='text/javascript' src="${tg.url('/ext/ext/ext-all.js')}"></script>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="${tg.url('/ext/uploadPanel/UploadPanel.css')}" />
+  <script type="text/javascript" src="${tg.url('/ext/swfupload/swfupload.js')}"></script>
+  <script type="text/javascript" src="${tg.url('/ext/uploadPanel/UploadPanel.js')}"></script>
+  <script type="text/javascript" src="${tg.url('/ext/js/jquery/jquery-1.9.1.min.js')}"></script>
+
+<link rel="stylesheet" type="text/css" href="${tg.url('/ext/ext/resources/css/ext-patch.cs')}" />
+<link rel="stylesheet" type="text/css" href="${tg.url('/ext/ext/resources/css/xtheme-gray.cs')}" />
+<script type="text/javascript" src="${tg.url('/ext/ext/adapter/ext/ext-base.js')}"></script>
+<script type="text/javascript" src="${tg.url('/ext/ext/ext-all-debug.js')}"></script>
+    <script type="text/javascript">
+        
+        //如果大家需要模拟跨全域，需将crossdomain.xml放到文件上传服务器的根目录, swfupload.swf 发起上传请求时首先
+        //会获取 http://ip:port/crossdomain.xml  crossdomain.xml 根据自己的需要进行设置
+        //希望能给大家带来帮助
+        Ext.onReady(function() {        
+            var panel=Ext.create('Ext.ux.uploadPanel.UploadPanel',{
+            header: false,
+            addFileBtnText : '选择文件...',
+            uploadBtnText : '上传',
+            removeBtnText : '移除所有',
+            cancelBtnText : '取消上传',
+            file_size_limit : 100,//MB
+            width : 750,//指定上传窗口的宽度
+            height : 300,//指定上传窗口的高度
+            //file_types: '*.jpg',
+            //file_types_description: 'Image Files',
+            flash_url : "/ext/swfupload/swfupload.swf",//必须指定正确的路径
+            flash9_url : "/ext/swfupload/swfupload_fp9.swf",
+            upload_url : 'upload_iso'
+            }); 
+            win = Ext.widget('window', {
+                title: '文件上传',
+                closeAction: 'hide',
+                layout: 'fit',
+                resizable: false,
+                modal: true,
+                items: panel
+            });
+            win.show();
+        });  
+         //       var window = new Ext.Window({ 
+//             title : '复杂布局',  
+//             closable : true,  
+//             border : false,  
+//             width : 400,  
+//             height : 500,  
+//             layout : 'fit',  
+//             items :[panel]  
+//         });  
+          
+//         window.show();  
+    </script>
+</head>
+
+<body>
+   <h2>hello word</h2>
+   <form action="http://192.168.0.123:8080/upload_iso" method="post" enctype ="multipart/form-data" runat="server"> 
+   <input id="File1" runat="server" name="UpLoadFile" type="file" /> 
+   <input type="submit"  value="Button" />
+   </form>
+   <div id="pannnn"></div>
+</body>
+</html>
